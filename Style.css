@@ -1,0 +1,116 @@
+body {
+    background-color: #ffcccc;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    max-width: 700px; /* Increased width for high-quality images */
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+h1 {
+    color: red;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* 🔹 Fixing Blurry Images */
+.high-res {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Prevents distortion */
+    border-radius: 10px;
+    max-width: 700px; /* Ensures high resolution */
+}
+
+.slide {
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.slide.active {
+    display: block;
+}
+
+.caption {
+    font-size: 16px;
+    font-style: italic;
+    color: darkred;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: darkred;
+    transform: scale(1.05);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Hide the surprise button on other slides */
+.surprise-btn {
+    display: none;
+}
+
+/* Ensure the button only appears on the fourth slide */
+.slide:nth-child(4) .surprise-btn {
+    display: block;
+}
+
+/* Initially hide the surprise content */
+.hidden {
+    display: none;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

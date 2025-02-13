@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Valentine's Day</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+    <div class="container">
+      <h1>Happy Valentine's Day, My Love! ❤️</h1>
+      <div class="slider">
+        <div class="slide active">
+          <img
+            src="https://i.postimg.cc/QVzdhVCD/IMG-6267.jpg"
+            alt="Us together"
+            class="high-res"
+          />
+          <p class="caption">
+            "Every moment with you is a memory to cherish." 💖
+          </p>
+        </div>
+        <div class="slide">
+          <img
+            src="https://i.postimg.cc/vgqH1ZvW/IMG-8339.jpg"
+            alt="A beautiful memory"
+            class="high-res"
+          />
+          <p class="caption">
+            "With you, life is full of love and laughter." 💕
+          </p>
+        </div>
+        <div class="slide">
+          <img
+            src="https://i.postimg.cc/Yj0C5Qp8/Krishna-Single.jpg"
+            alt="Our favorite place"
+            class="high-res"
+          />
+          <p class="caption">
+            "Forever grateful for every second with you." ❤️
+          </p>
+        </div>
+        <div class="slide">
+          <button class="surprise-btn" onclick="showSurprise()">
+            Click Here for a Surprise! 🎁
+          </button>
+          <div id="surprise-content" class="hidden">
+            <img
+              src="https://i.postimg.cc/XXKbq8Vn/Myntra.jpg"
+              alt="Surprise"
+              class="high-res"
+            />
+            <p class="caption">I love you 💖<br />From Tarang</p>
+          </div>
+        </div>
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
